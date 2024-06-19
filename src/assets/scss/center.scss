@@ -1,0 +1,56 @@
+// nav
+.center-wrap {
+  background:  #F4F4F4;
+}
+.center-view {
+  padding: 16px 0;
+  .view-right {
+    width: 996px;
+    .view-top {
+      position: relative;
+      .old-notice-msg {
+        background: #fff1ef;
+        border-radius: 4px;
+        color: #db3725;
+        height: 40px;
+        line-height: 40px;
+        padding: 0 12px;
+        border: 1px solid #db3725;
+        margin-bottom: 16px;
+      }
+      .old-notice-msg::before {
+        content: '';
+        width: 0;
+        height: 0;
+        border: 8px solid transparent;
+        border-right-color: #db3725;
+        position: absolute;
+        left: -15px;
+        top: 25%;
+      }
+      .old-notice-msg::after {
+        content: '';
+        width: 0;
+        height: 0;
+        border: 7px solid transparent;
+        border-right-color: #fff1ef;
+        position: absolute;
+        left: -13px;
+        top: 27%;
+      }
+    }
+  }
+}
+.left-contain{
+  .ant-form-item-control-input-content{
+    input{
+      width: 200px;
+    }
+  }
+}
+
+
+// 处理文件上传边距
+.ant-upload-list-picture-card-container, .ant-upload-list-picture-card .ant-upload-list-item{
+  margin: 0 4px 8px 0;
+}

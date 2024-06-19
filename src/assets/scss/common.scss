@@ -1,0 +1,300 @@
+html body {
+  font: 14px/1.15 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', '微软雅黑';
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  overflow-y: inherit;
+  color: $default-text;
+  background-color: #f1f1f1;
+}
+
+* {
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+// 滚动条
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  background: hsla(0, 0%, 100%, 0.6);
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 0;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 0;
+  background-color: rgba(95, 95, 95, 0.4);
+  transition: background-color 0.15s;
+
+  &:hover {
+    background-color: rgba(95, 95, 95, 0.7);
+  }
+}
+
+.text-overflow {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+ul,
+li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+html,
+body,
+div {
+  margin: 0;
+  border: 0;
+}
+
+// 处理chrome对文件上传按钮手型修改
+::-webkit-file-upload-button {
+  cursor: pointer;
+}
+
+input,
+textarea,
+select,
+button {
+  color: $default-text;
+}
+
+a {
+  color: $darken-text;
+  text-decoration: none;
+}
+
+.container {
+  width: 1200px !important;
+  margin: 0 auto;
+}
+
+i {
+  font-style: normal;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+// 清除浮动
+.clearfix {
+
+  &:before,
+  &:after {
+    display: table;
+    content: ' ';
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+/* google、safari */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none !important;
+  margin: 0;
+}
+
+/* 火狐 */
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+// 边距，字体大小
+@for $i from 0 through 100 {
+  .mb-#{$i} {
+    margin-bottom: 1px * $i !important;
+  }
+
+  .mt-#{$i} {
+    margin-top: 1px * $i !important;
+  }
+
+  .ml-#{$i} {
+    margin-left: 1px * $i !important;
+  }
+
+  .mr-#{$i} {
+    margin-right: 1px * $i !important;
+  }
+
+  .pb-#{$i} {
+    padding-bottom: 1px * $i !important;
+  }
+
+  .pt-#{$i} {
+    padding-top: 1px * $i !important;
+  }
+
+  .pl-#{$i} {
+    padding-left: 1px * $i !important;
+  }
+
+  .pr-#{$i} {
+    padding-right: 1px * $i !important;
+  }
+}
+
+@for $i from 12 through 80 {
+  .font#{$i} {
+    font-size: 1px * $i;
+  }
+}
+
+.base-link {
+  color: #999;
+  cursor: pointer;
+
+  &:hover {
+    color: $base-color !important;
+  }
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.no-select {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.no-border {
+  border: none !important;
+}
+
+.no-margin {
+  margin: 0 !important;
+}
+
+.red {
+  color: #df4545 !important;
+}
+
+.green {
+  color: #417505 !important;
+}
+
+.blue {
+  color: #2576d4;
+}
+
+.base-color {
+  color: $base-color !important;
+}
+
+.base-text {
+  color: $default-text !important;
+}
+
+.sub-text {
+  color: $lighten-text !important;
+}
+
+.title-text {
+  color: $darken-text !important;
+}
+
+.line-through {
+  color: $lighten-text;
+  text-decoration: line-through;
+}
+
+.no-ellipsis {
+  overflow: initial !important;
+  white-space: normal !important;
+  word-break: break-all;
+}
+
+.flex {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.base-flex {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.space-around {
+  justify-content: space-around;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.tal {
+  text-align: left;
+}
+
+.tac {
+  text-align: center;
+}
+
+.tar {
+  text-align: right;
+}
+
+.cp {
+  cursor: pointer;
+}
+
+// 中间分隔
+.base-space {
+  height: 16px;
+  background: $bg-color;
+}
+
+.base-separator {
+  color: #b4bac2;
+  margin: 0 4px;
+}
+
+.box-line {
+  &-label {
+    color: $darken-text;
+    float: left;
+  }
+
+  &-text {
+    margin-left: 80px;
+  }
+}
+
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none !important;
+}
+
+input::-webkit-outer-spin-button {
+  -webkit-appearance: none !important;
+}
+
+.base-lightgray {
+  color: #969699;
+}

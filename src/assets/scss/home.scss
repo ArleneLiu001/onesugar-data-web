@@ -1,0 +1,197 @@
+.recharge-center {
+  margin-top: 20px;
+  color: #323233;
+  padding: 24px;
+  position: relative;
+  background: linear-gradient(180deg, #fdd688 0%, rgb(253 214 136 / 00) 100%);
+  overflow: hidden;
+  .rechargebg {
+    position: absolute;
+    right: 24px;
+    top: 0;
+    width: 226px;
+  }
+  .account {
+    line-height: 28px;
+    margin-bottom: 8px;
+  }
+  .recharge-wrap {
+    position: relative;
+    z-index: 1;
+    background: #fff;
+    padding: 16px;
+    .recharge-box {
+      background: #fafafa;
+      padding: 16px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      &-info {
+        flex: 1;
+        background: #fff;
+        padding: 16px;
+      }
+    }
+    .left-contain {
+      padding: 24px;
+      width: 60%;
+      position: relative;
+      padding-top: 16px;
+    }
+  }
+}
+
+.question {
+  color: #969699;
+  cursor: pointer;
+  font-size: 14px;
+  margin-left: 5px;
+}
+
+.tabbox {
+  border-bottom: 1px solid #f0c400;
+  margin-bottom: 24px;
+  .tab-ul {
+    box-sizing: border-box;
+    height: 32px;
+    .tab-item {
+      height: 32px;
+      line-height: 32px;
+      padding: 0 30px;
+      display: inline-block;
+      cursor: pointer;
+      border: 1px solid #fff;
+      &:first-child {
+        margin-left: 10px;
+      }
+      &.active {
+        height: 33px;
+        border: 1px solid #f0c400;
+        font-weight: 900;
+        border-bottom: none;
+        background: #fff;
+      }
+    }
+  }
+}
+
+.pay-tabs {
+  width: 90px;
+  &-item {
+    cursor: pointer;
+    padding-left: 8px;
+    height: 32px;
+    line-height: 32px;
+    background: #ebedef;
+    border-bottom: 2px solid #fff;
+    &:last-child {
+      border-bottom: none;
+    }
+    &.active {
+      padding-left: 5px;
+      background: #fff;
+      border-left: 3px solid #f0c400;
+    }
+    img {
+      width: 16px;
+      height: 16px;
+      margin-right: 4px;
+    }
+  }
+}
+
+.right-contain {
+  position: relative;
+  padding: 16px;
+  width: 40%;
+  background: #fff;
+  width: 345px;
+  &:before {
+    position: absolute;
+    left: 0;
+    top: 16px;
+    content: '';
+    width: 1px;
+    height: calc(100% - 32px);
+    background: #d9d9d9;
+  }
+  .title-info {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 8px;
+  }
+  .line-h {
+    line-height: 22px;
+  }
+  .a-title {
+    color: #969699;
+    min-width: 70px;
+    display: inline-block;
+  }
+}
+
+.mask-bg {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgb(0 0 0 / 40%);
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .fee-confirm {
+    width: 600px;
+    height: 233px;
+    background: url('../image/base/rechargemodal.png') center no-repeat;
+    background-position: 100%;
+    background-size: 600px 233px;
+    .notice-box {
+      padding: 48px;
+      .tks {
+        color: #6b4600;
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 24px;
+      }
+      .notice-info {
+        color: #646466;
+        line-height: 22px;
+      }
+      .notice-btn {
+        margin-top: 24px;
+        border-radius: 2px;
+        background: #f0c400;
+        font-size: 16px;
+        line-height: 32px;
+        padding: 0 16px;
+        width: 96px;
+        cursor: pointer;
+        color: #4e3f00;
+      }
+    }
+  }
+}
+
+.qrcode-box {
+  display: flex;
+  &-img {
+    width: 100px;
+    height: 100px;
+    margin-right: 16px;
+    &-default {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      padding: 25px 0;
+      width: 100%;
+      height: 100%;
+      color: #969699;
+      background: #ffffff;
+      border: 1px solid #d7d8d9;
+    }
+  }
+}
